@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LockScreenSound</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="get_Music_Name2">Default</string>
+    <string name="get_Music_Name_Lock">Default</string>
+</resources>
