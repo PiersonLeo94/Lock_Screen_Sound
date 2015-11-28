@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Screen ON Sound"
+        android:id="@+id/LockTitleTxt"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/UnlockTextView"
+        android:layout_alignEnd="@+id/UnlockTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Screen OFF Sound"
+        android:id="@+id/UnlockTitleTxt"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/LockChangeBtn"
+        android:layout_alignRight="@+id/LockTextView"
+        android:layout_alignEnd="@+id/LockTextView"/>
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE"
+        android:onClick="GetMusicListLock"
+        android:id="@+id/LockChangeBtn"
+        android:layout_below="@+id/LockTitleTxt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:tag="1"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE"
+        android:onClick="GetMusicListUnlock"
+        android:id="@+id/UnlockChangeBtn"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/UnlockTitleTxt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:tag="2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="setDefault"
+        android:id="@+id/ResetBtn"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/get_Music_Name_Lock"
+        android:id="@+id/UnlockTextView"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:padding="9dp"
+        android:layout_alignTop="@+id/LockChangeBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/get_Music_Name2"
+        android:id="@+id/LockTextView"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:padding="9dp"
+        android:layout_alignTop="@+id/UnlockChangeBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/UnlockTextView"
+        android:layout_alignEnd="@+id/UnlockTextView" />
+
+
+</RelativeLayout>
