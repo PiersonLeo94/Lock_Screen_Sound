@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="setDefault"
+        android:id="@+id/ResetBtn"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="?attr/selectableItemBackground"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/get_Music_Name_Lock"
+        android:id="@+id/UnlockTextView"
+        android:gravity="left"
+        android:padding="9dp"
+        android:layout_marginTop="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="?attr/selectableItemBackground"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/get_Music_Name2"
+        android:id="@+id/LockTextView"
+        android:gravity="left"
+        android:padding="9dp"
+        android:layout_below="@+id/UnlockTextView"
+        android:layout_marginTop="113dp"
+        android:layout_toRightOf="@+id/OnTextView"
+        android:layout_toEndOf="@+id/OnTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ON:"
+        android:gravity="center"
+        android:id="@+id/OnTextView"
+        android:layout_alignTop="@+id/UnlockTextView"
+        android:layout_above="@+id/LockTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/UnlockTextView"
+        android:layout_toStartOf="@+id/UnlockTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="OFF:"
+        android:gravity="center"
+        android:id="@+id/OFFTextView"
+        android:layout_alignBottom="@+id/LockTextView"
+        android:layout_toLeftOf="@+id/LockTextView"
+        android:layout_alignTop="@+id/LockTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
